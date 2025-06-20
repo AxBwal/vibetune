@@ -1,0 +1,22 @@
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.moodButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.moodButton:hover {
+  background-color: #1e40af;
+}

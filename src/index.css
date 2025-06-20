@@ -1,0 +1,18 @@
+.default-theme {
+  background-color: #f0f0f0;
+}
+.happy-theme {
+  background-color: #fff9c4;
+}
+.sad-theme {
+  background-color: #bbdefb;
+}
+.angry-theme {
+  background-color: #ffcdd2;
+}
+.chill-theme {
+  background-color: #c8e6c9;
+}
+.energetic-theme {
+  background-color: #ffe0b2;
+}
