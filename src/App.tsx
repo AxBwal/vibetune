@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import MoodSelector from "./components/MoodSelector";
 import { moodSongs, type MoodType } from "./data/moodSongs";
 import { getMoodTheme } from "../utils/getMoodTheme";
