@@ -22,7 +22,7 @@ export default function MoodSelector({ setMood }: Props) {
         <button
           key={mood}
           onClick={() => MoodClicker(mood)}
-          className={`${styles.moodButton} ${activemood === mood ? styles.activeMoodBorder : ''}`}
+          className={`${styles.moodButton} ${activemood === mood ? styles.active : ''}`}
         >
           {mood}
         </button>

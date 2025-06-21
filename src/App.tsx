@@ -1,4 +1,4 @@
-import {useState } from "react";
+import { useState } from "react";
 import MoodSelector from "./components/MoodSelector";
 import { moodSongs, type MoodType } from "./data/moodSongs";
 import { getMoodTheme } from "../utils/getMoodTheme";
@@ -16,7 +16,7 @@ function App() {
     setSelectedSong(newSong);
   }
 
-   const handleMoodSelect = (selectedMood: MoodType) => {
+  const handleMoodSelect = (selectedMood: MoodType) => {
     setMood(selectedMood);
     randomizeSongForMood(selectedMood);
   };
@@ -28,10 +28,10 @@ function App() {
       {mood && (
         <>
           <h2 className={styles.subHeading}>Current Mood: {mood}</h2>
-          <div style={{ marginTop: "24px" }}>
+          <div className={styles.playerCard}>
             <iframe
-              width="560"
-              height="315"
+              width="100%"
+              height="400"
               src={selectedSong ?? undefined}
               title="Music Player"
               allow="autoplay; encrypted-media"
