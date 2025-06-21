@@ -3,18 +3,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  text-align: center;
-  transition: background-color 0.3s ease;
+  justify-content: center;
+  padding: 48px 24px;
+  transition: background 0.6s ease;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  position: relative;
 }
 
 .heading {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 700;
+  color: #facc15;
   margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px #00000066;
 }
 
 .subHeading {
   font-size: 20px;
-  margin-top: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #94a3b8;
+}
+.playerCard {
+  margin-top: 36px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 720px;
 }
