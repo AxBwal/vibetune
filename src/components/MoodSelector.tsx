@@ -6,7 +6,7 @@ interface Props {
   setMood: (mood: MoodType) => void;
 }
 
-const moods: MoodType[] = ["Happy", "Sad", "Angry", "Chill", "Energetic"];
+const moods: MoodType[] = ["Happy", "Sad", "Angry", "Chill", "Energetic","Special"];
 
 export default function MoodSelector({ setMood }: Props) {
   const [activemood, setActiveMood] = useState<MoodType | null>(null); 
