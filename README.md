@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+## 🎵 VibeTune – AI Mood-Based Music Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VibeTune is a modern, mood-driven music app that allows users to select their current emotional state and receive a personalized playlist of songs tailored to that vibe. Built using **React** and **TypeScript**, the app delivers an immersive experience with clean UI, dynamic theming, and random song selection.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔮 Features
 
-## Expanding the ESLint configuration
+* 🎭 Select from moods: **Chill**, **Energetic**, **Happy**, **Sad**, **Romantic**, **Special**
+* 🎶 Randomized music playback per mood
+* 🎥 YouTube video embed player
+* 🌈 Dynamic background theme based on selected mood
+* 🧠 Mood history tracking using localStorage
+* 💅 Smooth transitions and clean UI (no Tailwind, just handcrafted CSS)
+* 🚀 Built in TypeScript for type-safety and scalability
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+| Technology   | Purpose              |
+| ------------ | -------------------- |
+| React        | Front-end UI         |
+| TypeScript   | Static typing        |
+| CSS Modules  | Scoped clean styling |
+| YouTube      | Music source (embed) |
+| localStorage | Mood history memory  |
+
+---
+
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/AxBwal/vibetune.git
+cd vibetune
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Start the App
+
+```bash
+npm run dev
+```
+
+Open your browser at [http://localhost:5173](http://localhost:5173)
+
+---
+
+
+## 🙌 Contributing
+
+Pull requests are welcome! If you have suggestions for improvements, new features, or moods — feel free to fork and submit a PR.
+
+---
+
